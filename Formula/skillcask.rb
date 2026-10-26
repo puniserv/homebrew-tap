@@ -1,25 +1,25 @@
 class Skillcask < Formula
   desc "A lockfile-first package manager for AI agent skills (SKILL.md), backed by Composer repositories"
   homepage "https://github.com/puniserv/skillcask"
-  version "0.7.0"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.7.0/skillcask-aarch64-apple-darwin.tar.xz"
-      sha256 "3c4b8e5fcb6093c0f96513b81b3bae3c9272b940273fb780ab5a609f866147ca"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.8.0/skillcask-aarch64-apple-darwin.tar.xz"
+      sha256 "bbda3688d128c0e68d0d3157dc05df59f387424cb12b9eb94e950d8f710f7831"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.7.0/skillcask-x86_64-apple-darwin.tar.xz"
-      sha256 "89f2a2d9c65c736d23f91f143002aca257801867928b98680314b7f326af10e5"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.8.0/skillcask-x86_64-apple-darwin.tar.xz"
+      sha256 "a746ea391f4877c90ba1fc5e70c95206b93cfdb30317863b4b99bdbe82fb33f6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.7.0/skillcask-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b5fbd0c6f2f593bf7a92d59c8d2655362c3ab80fed1bf16c12357b72e15662f7"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.8.0/skillcask-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "fbeaac933ce91116ef3fd8d71448fc29a072b0a1c9f6c335efab35f57eeba98c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.7.0/skillcask-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3340756aace953f9d7e46dd828aecf7308d1485b1d5cd63096ef6b1617c80af5"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.8.0/skillcask-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "30827e311d06e39982b20c032cc61844d88206a29241b309a41d9e190a151077"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

@@ -1,25 +1,25 @@
 class Skillcask < Formula
   desc "A lockfile-first package manager for AI agent skills (SKILL.md), backed by Composer repositories"
   homepage "https://github.com/puniserv/skillcask"
-  version "0.9.4"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.9.4/skillcask-aarch64-apple-darwin.tar.xz"
-      sha256 "ce5457423f16a051c706c6469127be662a54c2aff569e22e8d5e0b76c8cbc5e0"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.0/skillcask-aarch64-apple-darwin.tar.xz"
+      sha256 "6cf736d6c7e65036804e91946a0a178a4f16e594c6c1c52b2c2c9b21c46e26bf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.9.4/skillcask-x86_64-apple-darwin.tar.xz"
-      sha256 "8db00563cddc1873184e15dbf5de673f8720516a7287e1241e29946db992f0a2"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.0/skillcask-x86_64-apple-darwin.tar.xz"
+      sha256 "5fba8e0f4651aa65d55388aef5324f274628ca789dbb2dd21bf20a78c4a8b304"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.9.4/skillcask-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c4076b1e694dfa2d35d296503e3e699f49edceaa91cb2d8d61afab6547a856ff"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.0/skillcask-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2b864dbcc87d919999cec40ca6209d6c0d211019774be0973387454ec5c8edbf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.9.4/skillcask-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "99447b9986a4de4e486cfb45ac0dc75e75f41b639ff423b2b260acf80184a6cb"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.0/skillcask-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0ad3b993ae9ec5b4aa4b4b4877e30222e99a8f8bba58664bb10e56b72c271976"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

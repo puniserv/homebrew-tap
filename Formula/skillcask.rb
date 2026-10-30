@@ -1,25 +1,25 @@
 class Skillcask < Formula
   desc "A lockfile-first package manager for AI agent skills (SKILL.md), backed by Composer repositories"
   homepage "https://github.com/puniserv/skillcask"
-  version "0.10.1"
+  version "0.10.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.10.1/skillcask-aarch64-apple-darwin.tar.xz"
-      sha256 "09810d9730f0d49bf107ef709cd570d3a98673ba2df7c83033ee2ff75f5ce7c6"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.2/skillcask-aarch64-apple-darwin.tar.xz"
+      sha256 "cf0014fdd43023e8f018310c67e0c1e62d3cffdcc7a86c3828fc03c513a8e9bc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.10.1/skillcask-x86_64-apple-darwin.tar.xz"
-      sha256 "bb008bec0a516b3d51f5e5226ddab45628d11cdb750f712701c01bcb2589ae75"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.2/skillcask-x86_64-apple-darwin.tar.xz"
+      sha256 "15402bf5b9705cd76b2a7645f3ce2b58b2a912113ff2fb7b8a96952f1d602f7a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.10.1/skillcask-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ebd5fa87047555f991d091a52b7029042154196725beb57b89d26af88bc34dfa"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.2/skillcask-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5abf7b04bb9be095cdab57d5126165ca58a4dcedcd11e032a97ab374e78e9e98"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/puniserv/skillcask/releases/download/v0.10.1/skillcask-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "adabd941a6e93fb4c306eac3a4f279360919b8134ab2e89cb7ae11bd29150b0c"
+      url "https://github.com/puniserv/skillcask/releases/download/v0.10.2/skillcask-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1b280216318873b0408a82abf9da993652612605292f2cf27f254e76487db12a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
